@@ -1,9 +1,15 @@
 import "./App.scss";
 import Timeline from "./components/timeline";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <div>
+      <Helmet>
+        <title>Video Game History</title>
+        <meta name="description" content="App Description" />
+        <meta name="theme-color" content="#008f68" />
+      </Helmet>
       <header>
         <h1 className="heading">Welcome to Video Game History</h1>
         <p className="blerb">
@@ -20,7 +26,9 @@ function App() {
         <Timeline />
       </main>
       <footer>
-        <small className="footer">Created by © CSwinton, All rights reserved</small>
+        <small className="footer">
+          Created by © CSwinton, All rights reserved
+        </small>
       </footer>
     </div>
   );
