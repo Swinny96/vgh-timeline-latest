@@ -1,0 +1,666 @@
+body {
+    font-family: Roboto,sans-serif;
+}
+  
+.Content {
+    text-align: center;
+    background: #000;
+}
+
+/* Magnavox Systems */
+
+$mo-primary: #fff;
+$mo-secondary: #000;
+
+$mi-primary: #fff;
+$mi-secondary: #000;
+
+/* Sega Systems */
+
+$sg-primary: #808080;
+$sg-secondary: #000;
+
+$ss-primary: #cecece;
+$ss-secondary: #000;
+
+$sd-primary: #ec8432;
+$sd-secondary: #fff;
+
+/* Atari Systems */
+
+$ahp-primary: #fff;
+$ahp-secondary: #000;
+
+$a26-primary: #fff;
+$a26-secondary: #000;
+
+$a52-primary: #fff;
+$a52-secondary: #000;
+
+$aj-primary: #821510;
+$aj-secondary: #fff;
+
+/* Apple Systems */
+
+$ap-primary: #fff;
+$ap-secondary: #000;
+
+/* PlayStation Systems */
+
+$ps1-primary: #a9a6a6;
+$ps1-secondary: #1f191d;
+
+$ps2-primary: #262626;
+$ps2-secondary: #00b4ff;
+
+$ps3-primary: #202020;
+$ps3-secondary: #fff;
+
+$ps4-primary: #003791;
+$ps4-secondary: #fff;
+
+$ps5-primary: #00439C;
+$ps5-secondary: #fff;
+
+/* Nintendo Systems */
+
+$nes-primary: #cd0000;
+$nes-secondary: #fff;
+
+$snes-primary: #4f43ae;
+$snes-secondary: #fff;
+
+$n64-primary: #329900;
+$n64-secondary: #fff;
+
+$ngc-primary: #6d5db4;
+$ngc-secondary: #fff;
+
+$wii-primary: #808080;
+$wii-secondary: #fff;
+
+$wiiu-primary: #009ac7;
+$wiiu-secondary: #fff;
+
+$ns-primary: #e60013;
+$ns-secondary: #fff;
+
+/* Xbox Systems */
+
+$xb-primary: #262626;
+$xb-secondary: #5aab43;
+
+$xb360-primary: #7EB900;
+$xb360-secondary: #fff;
+
+$xb1-primary: #3A3A3A;
+$xb1-secondary: #fff;
+
+$xbsx-primary: #e6e6e6;
+$xbsx-secondary: #000;
+  
+  
+.vertical-timeline-element-image {
+    max-width: 100%;
+    height: 200px;
+    margin: 1rem 0;
+}
+
+  .vertical-timeline--animate {
+    .vertical-timeline-element-icon {
+        background: #fff;
+        color: #000;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .vertical-timeline-element-content {
+        border-radius: 20px;
+        background: #fff;
+        color: #000;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        p {
+            text-align: left;
+            font-size: 1rem;
+        }
+        .vertical-timeline-element-date {
+            color: #fff;
+            opacity: 1;
+        }
+        .units {
+            position: absolute;
+            top: -1em;
+            right: 0em;
+            background: #fff;
+            color: #000;
+            padding: 8px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .vertical-timeline-element-content-arrow {
+            border-right: 7px solid rgb(255, 255, 255);
+        }
+        .best-selling-games {
+            display: flex;
+            flex-direction: column;
+            h4 {
+                text-align: left;
+            }
+            ol {
+                padding-inline-start: 1.5em;
+                margin: 0;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                text-align: left;
+                li {
+                    margin-right: 1.5em;
+                }
+            }
+        }
+    }
+  }
+
+  .vertical-timeline--animate {
+    .vertical-timeline-element-content:nth-child(even) {
+        .vertical-timeline-element-date {
+            text-align: left;
+        }
+    }
+  }
+
+    /* Magnavox Systems */
+
+    #MO {
+        .vertical-timeline-element-icon {
+            background: $mo-primary;
+            color: $mo-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $mo-primary;
+            color: $mo-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $mo-primary;
+            }
+            .units {
+                background: $mo-secondary;
+                color: $mo-primary;
+            }
+        }
+    }
+
+    #MI {
+        .vertical-timeline-element-icon {
+            background: $mi-primary;
+            color: $mi-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $mi-primary;
+            color: $mi-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $mi-primary;
+            }
+            .units {
+                background: $mi-secondary;
+                color: $mi-primary;
+            }
+        }
+    }
+
+    /* End */
+
+    /* Sega Systems */
+
+    #SG {
+        .vertical-timeline-element-icon {
+            background: $sg-primary;
+            color: $sg-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $sg-primary;
+            color: $sg-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $sg-primary;
+            }
+            .units {
+                background: $sg-secondary;
+                color: $sg-primary;
+            }
+        }
+    }
+
+    #SS {
+        .vertical-timeline-element-icon {
+            background: $ss-primary;
+            color: $ss-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $ss-primary;
+            color: $ss-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ss-primary;
+            }
+            .units {
+                background: $ss-secondary;
+                color: $ss-primary;
+            }
+        }
+    }
+
+    #SD {
+        .vertical-timeline-element-icon {
+            background: $sd-primary;
+            color: $sd-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $sd-primary;
+            color: $sd-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $sd-primary;
+            }
+            .units {
+                background: $sd-secondary;
+                color: $sd-primary;
+            }
+        }
+    }
+
+    /* End */
+
+    /* Atari Systems */
+
+    #AHP {
+        .vertical-timeline-element-icon {
+            background: $ahp-primary;
+            color: $ahp-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $ahp-primary;
+            color: $ahp-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ahp-primary;
+            }
+            .units {
+                background: $ahp-secondary;
+                color: $ahp-primary;
+            }
+        }
+    }
+      
+    #A26 {
+        .vertical-timeline-element-icon {
+            background: $a26-primary;
+            color: $a26-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $a26-primary;
+            color: $a26-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $a26-primary;
+            }
+            .units {
+                background: $a26-secondary;
+                color: $a26-primary;
+            }
+        }
+    }
+
+      #A52 {
+        .vertical-timeline-element-icon {
+            background: $a52-primary;
+            color: $a52-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $a52-primary;
+            color: $a52-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $a52-primary;
+            }
+            .units {
+                background: $a52-secondary;
+                color: $a52-primary;
+            }
+        }
+      }
+
+      #AJ {
+        .vertical-timeline-element-icon {
+            background: $aj-primary;
+            color: $aj-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $aj-primary;
+            color: $aj-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $aj-primary;
+            }
+            .units {
+                background: $aj-secondary;
+                color: $aj-primary;
+            }
+        }
+      }
+
+    /* End */
+
+     /* Apple Systems */
+      
+     #AP {
+        .vertical-timeline-element-icon {
+            background: $ap-primary;
+            color: $ap-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $ap-primary;
+            color: $ap-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ap-primary;
+            }
+            .units {
+                background: $ap-secondary;
+                color: $ap-primary;
+            }
+        }
+    }
+
+    /* End */
+
+    /* PlayStation Systems */
+
+    #PS1 {
+        .vertical-timeline-element-icon {
+            background: $ps1-primary;
+            color: $ps1-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $ps1-primary;
+            color: $ps1-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ps1-primary;
+            }
+            .units {
+                background: $ps1-secondary;
+                color: $ps1-primary;
+            }
+        }
+      }
+      
+      #PS2 {
+        .vertical-timeline-element-icon {
+            background: $ps2-primary;
+            color: $ps2-secondary ;
+        }
+        .vertical-timeline-element-content {
+            background: $ps2-primary;
+            color: $ps2-secondary ;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ps2-primary;
+            }
+            .units {
+                background: $ps2-secondary;
+                color: $ps2-primary;
+            }
+        }
+      }
+      
+      #PS3 {
+        .vertical-timeline-element-icon {
+            background: $ps3-primary;
+            color: $ps3-secondary ;
+        }
+        .vertical-timeline-element-content {
+            background: $ps3-primary;
+            color: $ps3-secondary ;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ps3-primary;
+            }
+            .units {
+                background: $ps3-secondary;
+                color: $ps3-primary;
+            }
+        }
+      }
+      
+      #PS4 {
+        .vertical-timeline-element-icon {
+            background: $ps4-primary;
+            color: $ps4-secondary ;
+        }
+        .vertical-timeline-element-content {
+            background: $ps4-primary;
+            color: $ps4-secondary ;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ps4-primary;
+            }
+            .units {
+                background: $ps4-secondary;
+                color: $ps4-primary;
+            }
+        }
+      }
+      
+      #PS5 {
+        .vertical-timeline-element-icon {
+            background: $ps5-primary;
+            color: $ps5-secondary ;
+        }
+        .vertical-timeline-element-content {
+            background: $ps5-primary;
+            color: $ps5-secondary ;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ps5-primary;
+            }
+            .units {
+                background: $ps5-secondary;
+                color: $ps5-primary;
+            }
+        }
+      }
+
+    /* End */
+
+    /* Nintendo Systems */
+
+    #NES {
+        .vertical-timeline-element-icon {
+            background: $nes-primary;
+            color: $nes-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $nes-primary;
+            color: $nes-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $nes-primary;
+            }
+            .units {
+                background: $nes-secondary;
+                color: $nes-primary;
+            }
+        }
+      }
+      
+      #SNES {
+        .vertical-timeline-element-icon {
+            background: $snes-primary;
+            color: $snes-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $snes-primary;
+            color: $snes-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $snes-primary;
+            }
+            .units {
+                background: $snes-secondary;
+                color: $snes-primary;
+            }
+        }
+      }
+      
+      #N64 {
+        .vertical-timeline-element-icon {
+            background: $n64-primary;
+            color: $n64-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $n64-primary;
+            color: $n64-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $n64-primary;
+            }
+            .units {
+                background: $n64-secondary;
+                color: $n64-primary;
+            }
+        }
+      }
+
+      #NGC {
+        .vertical-timeline-element-icon {
+            background: $ngc-primary;
+            color: $ngc-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $ngc-primary;
+            color: $ngc-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ngc-primary;
+            }
+            .units {
+                background: $ngc-secondary;
+                color: $ngc-primary;
+            }
+        }
+      }
+
+      #Wii {
+        .vertical-timeline-element-icon {
+            background: $wii-primary;
+            color: $wii-secondary ;
+        }
+        .vertical-timeline-element-content {
+            background: $wii-primary;
+            color: $wii-secondary ;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $wii-primary;
+            }
+            .units {
+                background: $wii-secondary;
+                color: $wii-primary;
+            }
+        }
+      }
+      
+      #WiiU {
+        .vertical-timeline-element-icon {
+            background: $wiiu-primary;
+            color: $wiiu-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $wiiu-primary;
+            color: $wiiu-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $wiiu-primary;
+            }
+            .units {
+                background: $wiiu-secondary;
+                color: $wiiu-primary;
+            }
+        }
+      }
+      
+      #NS {
+        .vertical-timeline-element-icon {
+            background: $ns-primary;
+            color: $ns-secondary;
+        }
+        .vertical-timeline-element-content {
+            font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+            background: $ns-primary;
+            color: $ns-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $ns-primary;
+            }
+            .units {
+                background: $ns-secondary;
+                color: $ns-primary;
+            }
+        }
+      }
+
+    /* End */
+
+    /* Microsoft Systems */
+
+    #XB {
+        .vertical-timeline-element-icon {
+            background: $xb-primary;
+            color: $xb-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $xb-primary;
+            color: $xb-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $xb-primary;
+            }
+            .units {
+                background: $xb-secondary;
+                color: $xb-primary;
+            }
+        }
+      }
+      
+      #XB360 {
+        .vertical-timeline-element-icon {
+            background: $xb360-primary;
+            color: $xb360-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $xb360-primary;
+            color: $xb360-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $xb360-primary;
+            }
+            .units {
+                background: $xb360-secondary;
+                color: $xb360-primary;
+            }
+        }
+      }
+
+      #XB1 {
+        .vertical-timeline-element-icon {
+            background: $xb1-primary;
+            color: $xb1-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $xb1-primary;
+            color: $xb1-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $xb1-primary;
+            }
+            .units {
+                background: $xb1-secondary;
+                color: $xb1-primary;
+            }
+        }
+      }
+      
+      #XBSX {
+        .vertical-timeline-element-icon {
+            background: $xbsx-primary;
+            color: $xbsx-secondary;
+        }
+        .vertical-timeline-element-content {
+            background: $xbsx-primary;
+            color: $xbsx-secondary;
+            .vertical-timeline-element-content-arrow {
+                border-right: 7px solid $xbsx-primary;
+            }
+            .units {
+                background: $xbsx-secondary;
+                color: $xbsx-primary;
+            }
+        }
+      }
+
+    /* End */
