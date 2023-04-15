@@ -7,6 +7,23 @@ body {
     background: #000;
 }
 
+header {
+    text-align: center;
+    background: #000;
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    border-bottom: 4px solid #fff;
+    .heading {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .blerb {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
 /* Magnavox Systems */
 
 $mo-primary: #fff;
