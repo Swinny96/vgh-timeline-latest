@@ -19,7 +19,9 @@ function App() {
       <main className="Content">
         <Timeline />
       </main>
-      <footer></footer>
+      <footer>
+        <small className="footer">Created by © CSwinton, All rights reserved</small>
+      </footer>
     </div>
   );
 }
