@@ -50,17 +50,18 @@ export default function Interactive() {
                   className="vertical-timeline-element-image"
                   alt={system}
                   src={image}
+                  loading="lazy"
                 />
                 <p>{describe}</p>
                 <div className="best-selling-games">
-                    <h4>Best Selling Games</h4>
-                    <ol>
-                        <li>{game1}</li>
-                        <li>{game2}</li>
-                        <li>{game3}</li>
-                        <li>{game4}</li>
-                        <li>{game5}</li>
-                    </ol>
+                  <h4>Best Selling Games</h4>
+                  <ol>
+                    <li>{game1}</li>
+                    <li>{game2}</li>
+                    <li>{game3}</li>
+                    <li>{game4}</li>
+                    <li>{game5}</li>
+                  </ol>
                 </div>
               </VerticalTimelineElement>
             );
