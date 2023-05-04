@@ -1,9 +1,42 @@
+import React, { useState, useEffect } from "react";
+
+// Importing loader
+import PacmanLoader from "react-spinners/PacmanLoader";
 import "./App.scss";
 import Timeline from "./components/timeline";
 import { Helmet } from "react-helmet";
 
-function App() {
-  return (
+const App = () => {
+  // Loading state
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Wait for 3 seconds
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  return isLoading ? (
+    // If page is still loading then splash screen
+    <div className="splashscreen">
+      <PacmanLoader
+        isLoading={isLoading}
+        size={150}
+        className="splash"
+        color="rgba(255, 255, 255, 1)"
+      />
+      <Helmet>
+        <title>Video Game History</title>
+        <meta
+          name="description"
+          content="learn about the history of video game home consoles with this
+    interactive timeline"
+        />
+        <meta name="theme-color" content="#008f68" />
+      </Helmet>
+    </div>
+  ) : (
     <div>
       <Helmet>
         <title>Video Game History</title>
@@ -32,7 +65,11 @@ function App() {
       <footer>
         <small className="footer">
           Created by ©{" "}
-          <a href="https://www.chrisswinton.co.uk" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.chrisswinton.co.uk"
+            rel="noreferrer"
+            target="_blank"
+          >
             CSwinton
           </a>
           , Last Updated May 2023
@@ -40,6 +77,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
