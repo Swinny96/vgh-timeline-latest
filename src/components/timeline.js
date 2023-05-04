@@ -16,7 +16,9 @@ export default function Timeline() {
           abbreviation,
           gen,
           year,
+          discontinued,
           system,
+          price,
           describe,
           icon,
           manufacture,
@@ -34,7 +36,19 @@ export default function Timeline() {
               date={year}
               icon={icon}
             >
-              <span className="units">{units} Units Sold</span>
+              <div className="Tags">
+                <div className="Tag" aria-labelledby={units}>
+                  <span>{units}</span>
+                </div>
+                <div className="Tag" aria-labelledby={year}>
+                  <span>
+                    {year}-{discontinued}
+                  </span>
+                </div>
+                <div className="Tag" aria-labelledby={price}>
+                  <span>{price}</span>
+                </div>
+              </div>
               <h3 className="vertical-timeline-element-title">{system}</h3>
               <h4 className="vertical-timeline-element-subtitle">
                 {manufacture}

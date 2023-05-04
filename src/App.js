@@ -7,7 +7,11 @@ function App() {
     <div>
       <Helmet>
         <title>Video Game History</title>
-        <meta name="description" content="App Description" />
+        <meta
+          name="description"
+          content="learn about the history of video game home consoles with this
+          interactive timeline"
+        />
         <meta name="theme-color" content="#008f68" />
       </Helmet>
       <header>
@@ -27,7 +31,11 @@ function App() {
       </main>
       <footer>
         <small className="footer">
-          Created by © CSwinton, All rights reserved
+          Created by ©{" "}
+          <a href="https://www.chrisswinton.co.uk" rel="noreferrer" target="_blank">
+            CSwinton
+          </a>
+          , Last Updated May 2023
         </small>
       </footer>
     </div>

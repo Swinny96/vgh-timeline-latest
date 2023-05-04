@@ -1,131 +1,209 @@
+@font-face {
+    font-family: "Regular";   /*Can be any text*/
+    src: local("MataRegular"),
+      url("./fonts/MataRegular.otf") format("oft");
+}
+
+@font-face {
+    font-family: "Bold";   /*Can be any text*/
+    src: local("MataBold"),
+      url("./fonts/MataBold.otf") format("oft");
+}
+
 body {
     font-family: Roboto,sans-serif;
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
 }
   
 .Content {
     text-align: center;
-    background: #000;
+    background: transparent;
 }
 
 header {
     text-align: center;
-    background: #000;
-    color:rgb(255, 255, 255);
+    background: transparent;
+    color:rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1em;
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
     .heading {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .blerb {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        line-height: 1.5em;
+        max-width: 80%;
+        margin: 0 auto;
     }
 }
 
 footer {
     text-align: center;
-    background: #000;
+    background: transparent;
     color:rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1em;
-    border-top: 4px solid #fff;
+    border-top: 4px solid rgba(255, 255, 255, 0.2);
+    a {
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+    }
 }
 
 /* Magnavox Systems */
 
-$mo-primary: #fff;
+$mo-primary: rgba(255, 255, 255, 0.2);
 $mo-secondary: #000;
+$mo-tag-bg: rgba(255, 255, 255, 0.2);
+$mo-tag-c: #000;
 
-$mi-primary: #fff;
+$mi-primary: rgba(255, 255, 255, 0.2);
 $mi-secondary: #000;
+$mi-tag-bg: rgba(255, 255, 255, 0.2);
+$mi-tag-c: #000;
 
 /* Sega Systems */
 
-$sg-primary: #808080;
+$sg-primary: rgba(128, 128, 128, 0.2);
 $sg-secondary: #000;
+$sg-tag-bg: rgba(128, 128, 128, 0.2);
+$sg-tag-c: #000;
 
-$ss-primary: #cecece;
+$ss-primary: rgba(206, 206, 206, 0.2);
 $ss-secondary: #000;
+$ss-tag-bg: rgba(206, 206, 206, 0.2);
+$ss-tag-c: #000;
 
-$sd-primary: #ec8432;
+$sd-primary: rgba(236, 132, 50, 0.2);
 $sd-secondary: #fff;
+$sd-tag-bg: rgba(236, 132, 50, 0.2);
+$sd-tag-c: #fff;
 
 /* Atari Systems */
 
-$ahp-primary: #fff;
+$ahp-primary: rgba(255, 255, 255, 0.2);
 $ahp-secondary: #000;
+$ahp-tag-bg: rgba(255, 255, 255, 0.2);
+$ahp-tag-c: #000;
 
-$a26-primary: #fff;
+$a26-primary: rgba(255, 255, 255, 0.2);
 $a26-secondary: #000;
+$a26-tag-bg: rgba(255, 255, 255, 0.2);
+$a26-tag-c: #000;
 
-$a52-primary: #fff;
+$a52-primary: rgba(255, 255, 255, 0.2);
 $a52-secondary: #000;
+$a52-tag-bg: rgba(255, 255, 255, 0.2);
+$a52-tag-c: #000;
 
-$aj-primary: #821510;
-$aj-secondary: #fff;
+$aj-primary: rgba(130, 21, 16, 0.2);
+$aj-secondary: #000;
+$aj-tag-bg: rgba(130, 21, 16, 0.2);
+$aj-tag-c: #000;
 
 /* Apple Systems */
 
-$ap-primary: #fff;
+$ap-primary: rgba(255, 255, 255, 0.2);
 $ap-secondary: #000;
+$ap-tag-bg: rgba(255, 255, 255, 0.2);
+$ap-tag-c: #000;
 
 /* PlayStation Systems */
 
-$ps1-primary: #a9a6a6;
+$ps1-primary: rgba(169, 166, 166, 0.2);
 $ps1-secondary: #1f191d;
+$ps1-tag-bg: rgba(169, 166, 166, 0.2);
+$ps1-tag-c: #000;
 
-$ps2-primary: #262626;
-$ps2-secondary: #00b4ff;
+$ps2-primary: rgba(38, 38, 38, 0.2);
+$ps2-secondary: rgba(0, 180, 255, 1);
+$ps2-tag-bg: rgba(38, 38, 38, 0.2);
+$ps2-tag-c: #fff;
 
-$ps3-primary: #202020;
+$ps3-primary: rgba(32, 32, 32, 0.2);
 $ps3-secondary: #fff;
+$ps3-tag-bg: rgba(32, 32, 32, 0.2);
+$ps3-tag-c: #fff;
 
-$ps4-primary: #003791;
+$ps4-primary: rgba(0, 55, 145, 0.2);
 $ps4-secondary: #fff;
+$ps4-tag-bg: rgba(0, 55, 145, 0.2);
+$ps4-tag-c: #fff;
 
-$ps5-primary: #00439C;
+$ps5-primary: rgba(0, 67, 156, 0.2);
 $ps5-secondary: #fff;
+$ps5-tag-bg: rgba(0, 67, 156, 0.2);
+$ps5-tag-c: #fff;
 
 /* Nintendo Systems */
 
-$nes-primary: #cd0000;
+$nes-primary: rgba(205, 0, 0, 0.2);
 $nes-secondary: #fff;
+$nes-tag-bg: rgba(205, 0, 0, 0.2);
+$nes-tag-c: #fff;
 
-$snes-primary: #4f43ae;
+$snes-primary: rgba(79, 67, 174, 0.2);
 $snes-secondary: #fff;
+$snes-tag-bg: rgba(79, 67, 174, 0.2);
+$snes-tag-c: #fff;
 
-$n64-primary: #329900;
+$n64-primary: rgba(50, 153, 0, 0.2);
 $n64-secondary: #fff;
+$n64-tag-bg: rgba(50, 153, 0, 0.2);
+$n64-tag-c: #000;
 
-$ngc-primary: #6d5db4;
+$ngc-primary: rgba(109, 93, 180, 0.2);
 $ngc-secondary: #fff;
+$ngc-tag-bg: rgba(109, 93, 180, 0.2);
+$ngc-tag-c: #fff;
 
-$wii-primary: #808080;
+$wii-primary: rgba(128, 128, 128, 0.2);
 $wii-secondary: #fff;
+$wii-tag-bg: rgba(128, 128, 128, 0.2);
+$wii-tag-c: #fff;
 
-$wiiu-primary: #009ac7;
+$wiiu-primary: rgba(0, 154, 199, 0.2);
 $wiiu-secondary: #fff;
+$wiiu-tag-bg: rgba(0, 154, 199, 0.2);
+$wiiu-tag-c: #fff;
 
-$ns-primary: #e60013;
+$ns-primary: rgba(230, 0, 19, 1);
 $ns-secondary: #fff;
+$ns-tag-bg: rgba(230, 0, 19, 0.8);
+$ns-tag-c: #fff;
 
 /* Xbox Systems */
 
-$xb-primary: #262626;
-$xb-secondary: #5aab43;
+$xb-primary: rgba(38, 38, 38, 0.2);
+$xb-secondary: rgba(90, 171, 67, 1);
+$xb-tag-bg: rgba(38, 38, 38, 0.2);
+$xb-tag-c: rgba(90, 171, 67, 1);
 
-$xb360-primary: #7EB900;
+$xb360-primary: rgba(126, 185, 0, 0.2);
 $xb360-secondary: #fff;
+$xb360-tag-bg: rgba(126, 185, 0, 0.2);
+$xb360-tag-c: #fff;
 
-$xb1-primary: #3A3A3A;
+$xb1-primary: rgba(58, 58, 58, 0.2);
 $xb1-secondary: #fff;
+$xb1-tag-bg: rgba(58, 58, 58, 0.2);
+$xb1-tag-c: #fff;
 
-$xbsx-primary: #e6e6e6;
+$xbsx-primary: rgba(230, 230, 230, 1);
 $xbsx-secondary: #000;
+$xbsx-tag-bg: #000;
+$xbsx-tag-c: #fff;
+
+.vertical-timeline {
+    &::before {
+        background: rgba(255, 255, 255, 0.2) !important;
+    }
+}
   
   
 .vertical-timeline-element-image {
@@ -143,7 +221,10 @@ $xbsx-secondary: #000;
     }
     .vertical-timeline-element-content {
         border-radius: 20px;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+        border: 1px solid transparent;
         color: #000;
         box-shadow: none;
         -webkit-box-shadow: none;
@@ -164,6 +245,51 @@ $xbsx-secondary: #000;
             padding: 8px;
             border-radius: 10px;
             font-weight: bold;
+        }
+        .Tags {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-bottom: 8px;
+            gap: 6px;
+            >*>* {
+                padding-left: 15px!important;
+                padding-right: 15px!important;
+            }
+            .Tag {
+                height: 32px;
+                cursor: default;
+                color: #000;
+                border: none;
+                display: inline-flex;
+                outline: none;
+                padding: 0;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                align-items: center;
+                white-space: nowrap;
+                border-radius: 16px;
+                justify-content: center;
+                text-decoration: none;
+                background-color: #e0e0e0;
+                span {
+                    cursor: inherit;
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+                    white-space: nowrap;
+                }
+                &:hover,:focus {
+                    outline-offset: 2px;
+                    outline-color: initial;
+                    outline-style: auto;
+                    outline-width: 2px;
+                }
+            }
         }
         .vertical-timeline-element-content-arrow {
             border-right: 7px solid rgb(255, 255, 255);
@@ -200,8 +326,8 @@ $xbsx-secondary: #000;
 
     #MO {
         .vertical-timeline-element-icon {
-            background: $mo-primary;
-            color: $mo-secondary;
+            background: $mo-tag-bg;
+            color: $mo-tag-c;
         }
         .vertical-timeline-element-content {
             background: $mo-primary;
@@ -213,13 +339,19 @@ $xbsx-secondary: #000;
                 background: $mo-secondary;
                 color: $mo-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $mo-tag-bg;
+                    color: $mo-tag-c;
+                }
+            }
         }
     }
 
     #MI {
         .vertical-timeline-element-icon {
-            background: $mi-primary;
-            color: $mi-secondary;
+            background: $mi-tag-bg;
+            color: $mi-tag-c;
         }
         .vertical-timeline-element-content {
             background: $mi-primary;
@@ -231,6 +363,12 @@ $xbsx-secondary: #000;
                 background: $mi-secondary;
                 color: $mi-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $mi-tag-bg;
+                    color: $mi-tag-c;
+                }
+            }
         }
     }
 
@@ -240,8 +378,8 @@ $xbsx-secondary: #000;
 
     #SG {
         .vertical-timeline-element-icon {
-            background: $sg-primary;
-            color: $sg-secondary;
+            background: $sg-tag-bg;
+            color: $sg-tag-c;
         }
         .vertical-timeline-element-content {
             background: $sg-primary;
@@ -253,13 +391,19 @@ $xbsx-secondary: #000;
                 background: $sg-secondary;
                 color: $sg-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $sg-tag-bg;
+                    color: $sg-tag-c;
+                }
+            }
         }
     }
 
     #SS {
         .vertical-timeline-element-icon {
-            background: $ss-primary;
-            color: $ss-secondary;
+            background: $ss-tag-bg;
+            color: $ss-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ss-primary;
@@ -271,13 +415,19 @@ $xbsx-secondary: #000;
                 background: $ss-secondary;
                 color: $ss-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ss-tag-bg;
+                    color: $ss-tag-c;
+                }
+            }
         }
     }
 
     #SD {
         .vertical-timeline-element-icon {
-            background: $sd-primary;
-            color: $sd-secondary;
+            background: $sd-tag-bg;
+            color: $sd-tag-c;
         }
         .vertical-timeline-element-content {
             background: $sd-primary;
@@ -289,6 +439,12 @@ $xbsx-secondary: #000;
                 background: $sd-secondary;
                 color: $sd-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $sd-tag-bg;
+                    color: $sd-tag-c;
+                }
+            }
         }
     }
 
@@ -298,8 +454,8 @@ $xbsx-secondary: #000;
 
     #AHP {
         .vertical-timeline-element-icon {
-            background: $ahp-primary;
-            color: $ahp-secondary;
+            background: $ahp-tag-bg;
+            color: $ahp-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ahp-primary;
@@ -311,13 +467,19 @@ $xbsx-secondary: #000;
                 background: $ahp-secondary;
                 color: $ahp-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ahp-tag-bg;
+                    color: $ahp-tag-c;
+                }
+            }
         }
     }
       
     #A26 {
         .vertical-timeline-element-icon {
-            background: $a26-primary;
-            color: $a26-secondary;
+            background: $a26-tag-bg;
+            color: $a26-tag-c;
         }
         .vertical-timeline-element-content {
             background: $a26-primary;
@@ -329,13 +491,19 @@ $xbsx-secondary: #000;
                 background: $a26-secondary;
                 color: $a26-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $a26-tag-bg;
+                    color: $a26-tag-c;
+                }
+            }
         }
     }
 
       #A52 {
         .vertical-timeline-element-icon {
-            background: $a52-primary;
-            color: $a52-secondary;
+            background: $a52-tag-bg;
+            color: $a52-tag-c;
         }
         .vertical-timeline-element-content {
             background: $a52-primary;
@@ -347,13 +515,19 @@ $xbsx-secondary: #000;
                 background: $a52-secondary;
                 color: $a52-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $a52-tag-bg;
+                    color: $a52-tag-c;
+                }
+            }
         }
       }
 
       #AJ {
         .vertical-timeline-element-icon {
-            background: $aj-primary;
-            color: $aj-secondary;
+            background: $aj-tag-bg;
+            color: $aj-tag-c;
         }
         .vertical-timeline-element-content {
             background: $aj-primary;
@@ -365,6 +539,12 @@ $xbsx-secondary: #000;
                 background: $aj-secondary;
                 color: $aj-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $aj-tag-bg;
+                    color: $aj-tag-c;
+                }
+            }
         }
       }
 
@@ -374,8 +554,8 @@ $xbsx-secondary: #000;
       
      #AP {
         .vertical-timeline-element-icon {
-            background: $ap-primary;
-            color: $ap-secondary;
+            background: $ap-tag-bg;
+            color: $ap-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ap-primary;
@@ -387,6 +567,12 @@ $xbsx-secondary: #000;
                 background: $ap-secondary;
                 color: $ap-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ap-tag-bg;
+                    color: $ap-tag-c;
+                }
+            }
         }
     }
 
@@ -396,8 +582,8 @@ $xbsx-secondary: #000;
 
     #PS1 {
         .vertical-timeline-element-icon {
-            background: $ps1-primary;
-            color: $ps1-secondary;
+            background: $ps1-tag-bg;
+            color: $ps1-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ps1-primary;
@@ -409,17 +595,23 @@ $xbsx-secondary: #000;
                 background: $ps1-secondary;
                 color: $ps1-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ps1-tag-bg;
+                    color: $ps1-tag-c;
+                }
+            }
         }
       }
       
       #PS2 {
         .vertical-timeline-element-icon {
-            background: $ps2-primary;
-            color: $ps2-secondary ;
+            background: $ps2-tag-bg;
+            color: $ps2-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ps2-primary;
-            color: $ps2-secondary ;
+            color: $ps2-secondary;
             .vertical-timeline-element-content-arrow {
                 border-right: 7px solid $ps2-primary;
             }
@@ -427,17 +619,28 @@ $xbsx-secondary: #000;
                 background: $ps2-secondary;
                 color: $ps2-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ps2-tag-bg;
+                    color: $ps2-tag-c;
+                }
+            }
         }
       }
       
       #PS3 {
         .vertical-timeline-element-icon {
-            background: $ps3-primary;
-            color: $ps3-secondary ;
+            background: $ps3-tag-bg;
+            color: $ps3-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ps3-primary;
-            color: $ps3-secondary ;
+            color: $ps3-secondary;
+            .vertical-timeline-element-title,.vertical-timeline-element-subtitle {
+                font-family: "Regular";
+                line-height: 1.5;
+                font-size: medium;
+            }
             .vertical-timeline-element-content-arrow {
                 border-right: 7px solid $ps3-primary;
             }
@@ -445,17 +648,23 @@ $xbsx-secondary: #000;
                 background: $ps3-secondary;
                 color: $ps3-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ps3-tag-bg;
+                    color: $ps3-tag-c;
+                }
+            }
         }
       }
       
       #PS4 {
         .vertical-timeline-element-icon {
-            background: $ps4-primary;
-            color: $ps4-secondary ;
+            background: $ps4-tag-bg;
+            color: $ps4-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ps4-primary;
-            color: $ps4-secondary ;
+            color: $ps4-secondary;
             .vertical-timeline-element-content-arrow {
                 border-right: 7px solid $ps4-primary;
             }
@@ -463,23 +672,35 @@ $xbsx-secondary: #000;
                 background: $ps4-secondary;
                 color: $ps4-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ps4-tag-bg;
+                    color: $ps4-tag-c;
+                }
+            }
         }
       }
       
       #PS5 {
         .vertical-timeline-element-icon {
-            background: $ps5-primary;
-            color: $ps5-secondary ;
+            background: $ps5-tag-bg;
+            color: $ps5-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ps5-primary;
-            color: $ps5-secondary ;
+            color: $ps5-secondary;
             .vertical-timeline-element-content-arrow {
                 border-right: 7px solid $ps5-primary;
             }
             .units {
                 background: $ps5-secondary;
                 color: $ps5-primary;
+            }
+            .Tags {
+                .Tag {
+                    background: $ps5-tag-bg;
+                    color: $ps5-tag-c;
+                }
             }
         }
       }
@@ -490,8 +711,8 @@ $xbsx-secondary: #000;
 
     #NES {
         .vertical-timeline-element-icon {
-            background: $nes-primary;
-            color: $nes-secondary;
+            background: $nes-tag-bg;
+            color: $nes-tag-c;
         }
         .vertical-timeline-element-content {
             background: $nes-primary;
@@ -503,13 +724,19 @@ $xbsx-secondary: #000;
                 background: $nes-secondary;
                 color: $nes-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $nes-tag-bg;
+                    color: $nes-tag-c;
+                }
+            }
         }
       }
       
       #SNES {
         .vertical-timeline-element-icon {
-            background: $snes-primary;
-            color: $snes-secondary;
+            background: $snes-tag-bg;
+            color: $snes-tag-c;
         }
         .vertical-timeline-element-content {
             background: $snes-primary;
@@ -521,13 +748,19 @@ $xbsx-secondary: #000;
                 background: $snes-secondary;
                 color: $snes-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $snes-tag-bg;
+                    color: $snes-tag-c;
+                }
+            }
         }
       }
       
       #N64 {
         .vertical-timeline-element-icon {
-            background: $n64-primary;
-            color: $n64-secondary;
+            background: $n64-tag-bg;
+            color: $n64-tag-c;
         }
         .vertical-timeline-element-content {
             background: $n64-primary;
@@ -539,13 +772,19 @@ $xbsx-secondary: #000;
                 background: $n64-secondary;
                 color: $n64-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $n64-tag-bg;
+                    color: $n64-tag-c;
+                }
+            }
         }
       }
 
       #NGC {
         .vertical-timeline-element-icon {
-            background: $ngc-primary;
-            color: $ngc-secondary;
+            background: $ngc-tag-bg;
+            color: $ngc-tag-c;
         }
         .vertical-timeline-element-content {
             background: $ngc-primary;
@@ -557,17 +796,23 @@ $xbsx-secondary: #000;
                 background: $ngc-secondary;
                 color: $ngc-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ngc-tag-bg;
+                    color: $ngc-tag-c;
+                }
+            }
         }
       }
 
       #Wii {
         .vertical-timeline-element-icon {
-            background: $wii-primary;
-            color: $wii-secondary ;
+            background: $wii-tag-bg;
+            color: $wii-tag-c;
         }
         .vertical-timeline-element-content {
             background: $wii-primary;
-            color: $wii-secondary ;
+            color: $wii-secondary;
             .vertical-timeline-element-content-arrow {
                 border-right: 7px solid $wii-primary;
             }
@@ -575,13 +820,19 @@ $xbsx-secondary: #000;
                 background: $wii-secondary;
                 color: $wii-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $wii-tag-bg;
+                    color: $wii-tag-c;
+                }
+            }
         }
       }
       
       #WiiU {
         .vertical-timeline-element-icon {
-            background: $wiiu-primary;
-            color: $wiiu-secondary;
+            background: $wiiu-tag-bg;
+            color: $wiiu-tag-c;
         }
         .vertical-timeline-element-content {
             background: $wiiu-primary;
@@ -593,13 +844,19 @@ $xbsx-secondary: #000;
                 background: $wiiu-secondary;
                 color: $wiiu-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $wiiu-tag-bg;
+                    color: $wiiu-tag-c;
+                }
+            }
         }
       }
       
       #NS {
         .vertical-timeline-element-icon {
-            background: $ns-primary;
-            color: $ns-secondary;
+            background: $ns-tag-bg;
+            color: $ns-tag-c;
         }
         .vertical-timeline-element-content {
             font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -612,6 +869,12 @@ $xbsx-secondary: #000;
                 background: $ns-secondary;
                 color: $ns-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $ns-tag-bg;
+                    color: $ns-tag-c;
+                }
+            }
         }
       }
 
@@ -621,8 +884,8 @@ $xbsx-secondary: #000;
 
     #XB {
         .vertical-timeline-element-icon {
-            background: $xb-primary;
-            color: $xb-secondary;
+            background: $xb-tag-bg;
+            color: $xb-tag-c;
         }
         .vertical-timeline-element-content {
             background: $xb-primary;
@@ -634,13 +897,19 @@ $xbsx-secondary: #000;
                 background: $xb-secondary;
                 color: $xb-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $xb-tag-bg;
+                    color: $xb-tag-c;
+                }
+            }
         }
       }
       
       #XB360 {
         .vertical-timeline-element-icon {
-            background: $xb360-primary;
-            color: $xb360-secondary;
+            background: $xb360-tag-bg;
+            color: $xb360-tag-c;
         }
         .vertical-timeline-element-content {
             background: $xb360-primary;
@@ -652,13 +921,19 @@ $xbsx-secondary: #000;
                 background: $xb360-secondary;
                 color: $xb360-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $xb360-tag-bg;
+                    color: $xb360-tag-c;
+                }
+            }
         }
       }
 
       #XB1 {
         .vertical-timeline-element-icon {
-            background: $xb1-primary;
-            color: $xb1-secondary;
+            background: $xb1-tag-bg;
+            color: $xb1-tag-c;
         }
         .vertical-timeline-element-content {
             background: $xb1-primary;
@@ -670,13 +945,19 @@ $xbsx-secondary: #000;
                 background: $xb1-secondary;
                 color: $xb1-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $xb1-tag-bg;
+                    color: $xb1-tag-c;
+                }
+            }
         }
       }
       
       #XBSX {
         .vertical-timeline-element-icon {
-            background: $xbsx-primary;
-            color: $xbsx-secondary;
+            background: $xbsx-tag-bg;
+            color: $xbsx-tag-c;
         }
         .vertical-timeline-element-content {
             background: $xbsx-primary;
@@ -688,7 +969,31 @@ $xbsx-secondary: #000;
                 background: $xbsx-secondary;
                 color: $xbsx-primary;
             }
+            .Tags {
+                .Tag {
+                    background: $xbsx-tag-bg;
+                    color: $xbsx-tag-c;
+                }
+            }
         }
       }
 
     /* End */
+
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) { 
+        .vertical-timeline--animate {
+            .vertical-timeline-element-content {
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                transition: 0.3s;
+                &:hover,:focus {
+                    transform: translateY(-10px);
+                    border-color: transparent;
+                    border-color: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+    }
