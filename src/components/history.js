@@ -1,5 +1,4 @@
 import VideogameAssetRoundedIcon from "@mui/icons-material/VideogameAssetRounded";
-import Xbox from "./images/xbsxs.png"
 
 const Data = [
   {
@@ -537,8 +536,7 @@ const Data = [
     discontinued: "Present",
     price: "£249-£449",
     icon: <VideogameAssetRoundedIcon />,
-    image:
-      "/src/images/xbsxs.png",
+    image: "/src/images/xbsxs.png",
     game1: "Assassin's Creed Valhalla",
     game2: "Call of Duty: Black Ops Cold War",
     game3: "Madden NFL 21",
