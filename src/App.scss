@@ -78,26 +78,26 @@ footer {
 /* Magnavox Systems */
 
 $mo-primary: rgba( 255, 255, 255, 0.25 );
-$mo-secondary: #000;
+$mo-secondary: #fff;
 $mo-tag-bg: rgba( 255, 255, 255, 0.25 );
-$mo-tag-c: #000;
+$mo-tag-c: #fff;
 
 $mi-primary: rgba( 255, 255, 255, 0.25 );
-$mi-secondary: #000;
+$mi-secondary: #fff;
 $mi-tag-bg: rgba( 255, 255, 255, 0.25 );
-$mi-tag-c: #000;
+$mi-tag-c: #fff;
 
 /* Sega Systems */
 
 $sg-primary: rgba(128, 128, 128, 0.25);
-$sg-secondary: #000;
+$sg-secondary: #fff;
 $sg-tag-bg: rgba(128, 128, 128, 0.25);
-$sg-tag-c: #000;
+$sg-tag-c: #fff;
 
 $ss-primary: rgba(206, 206, 206, 0.25);
-$ss-secondary: #000;
+$ss-secondary: #fff;
 $ss-tag-bg: rgba(206, 206, 206, 0.25);
-$ss-tag-c: #000;
+$ss-tag-c: #fff;
 
 $sd-primary: rgba(236, 132, 50, 0.25);
 $sd-secondary: #fff;
@@ -107,38 +107,38 @@ $sd-tag-c: #fff;
 /* Atari Systems */
 
 $ahp-primary: rgba( 255, 255, 255, 0.25 );
-$ahp-secondary: #000;
+$ahp-secondary: #fff;
 $ahp-tag-bg: rgba( 255, 255, 255, 0.25 );
-$ahp-tag-c: #000;
+$ahp-tag-c: #fff;
 
 $a26-primary: rgba( 255, 255, 255, 0.25 );
-$a26-secondary: #000;
+$a26-secondary: #fff;
 $a26-tag-bg: rgba( 255, 255, 255, 0.25 );
-$a26-tag-c: #000;
+$a26-tag-c: #fff;
 
 $a52-primary: rgba( 255, 255, 255, 0.25 );
-$a52-secondary: #000;
+$a52-secondary: #fff;
 $a52-tag-bg: rgba( 255, 255, 255, 0.25 );
-$a52-tag-c: #000;
+$a52-tag-c: #fff;
 
 $aj-primary: rgba(130, 21, 16, 0.25);
-$aj-secondary: #000;
+$aj-secondary: #fff;
 $aj-tag-bg: rgba(130, 21, 16, 0.25);
-$aj-tag-c: #000;
+$aj-tag-c: #fff;
 
 /* Apple Systems */
 
 $ap-primary: rgba( 255, 255, 255, 0.25 );
-$ap-secondary: #000;
+$ap-secondary: #fff;
 $ap-tag-bg: rgba( 255, 255, 255, 0.25 );
-$ap-tag-c: #000;
+$ap-tag-c: #fff;
 
 /* PlayStation Systems */
 
 $ps1-primary: rgba(169, 166, 166, 0.25);
-$ps1-secondary: #1f191d;
+$ps1-secondary: #fff;
 $ps1-tag-bg: rgba(169, 166, 166, 0.25);
-$ps1-tag-c: #000;
+$ps1-tag-c: #fff;
 
 $ps2-primary: rgba(38, 38, 38, 0.25);
 $ps2-secondary: rgba(0, 180, 255, 1);
@@ -192,9 +192,9 @@ $wiiu-secondary: #fff;
 $wiiu-tag-bg: rgba(0, 154, 199, 0.25);
 $wiiu-tag-c: #fff;
 
-$ns-primary: rgba(230, 0, 19, 1);
+$ns-primary: rgba(230, 0, 19, 0.25);
 $ns-secondary: #fff;
-$ns-tag-bg: rgba(230, 0, 19, 0.8);
+$ns-tag-bg: rgba(230, 0, 19, 0.25);
 $ns-tag-c: #fff;
 
 /* Xbox Systems */
@@ -241,7 +241,7 @@ $xbsx-tag-c: #fff;
     }
     .vertical-timeline-element-content {
         border-radius: 10px;
-        color: #000;
+        color: #fff;
         p {
             text-align: left;
             font-size: 1rem;

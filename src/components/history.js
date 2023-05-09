@@ -1,4 +1,5 @@
 import VideogameAssetRoundedIcon from "@mui/icons-material/VideogameAssetRounded";
+import Xbox from "./images/xbsxs.png"
 
 const Data = [
   {
@@ -516,7 +517,7 @@ const Data = [
     price: "£279",
     icon: <VideogameAssetRoundedIcon />,
     image:
-      "https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/not_approved_1/NSwitchTop.png",
+      "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/c_scale,w_400/Dev/nin-component/dual-hardware/split-cta-system",
     game1: "The Legend of Zelda: Breath of the Wild",
     game2: "Super Mario Odyssey",
     game3: "Super Smash Bros. Ultimate",
@@ -537,7 +538,7 @@ const Data = [
     price: "£249-£449",
     icon: <VideogameAssetRoundedIcon />,
     image:
-      "https://cdn.geekwire.com/wp-content/uploads/2020/09/Still-Image_Console-Family_2_Back-to-Back_Consoles-Controllers.png",
+      "/src/images/xbsxs.png",
     game1: "Assassin's Creed Valhalla",
     game2: "Call of Duty: Black Ops Cold War",
     game3: "Madden NFL 21",
