@@ -16,7 +16,9 @@
 }
 
 .splashscreen {
-    background: linear-gradient(to bottom, #bdc3c7, #a8adb1);
+    background:
+    url("https://images.unsplash.com/photo-1653419831613-56ed2a1c8ea8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80")
+    center / cover no-repeat fixed;
     transition: 0.3s;
 }
 
@@ -28,7 +30,9 @@
 
 body {
     font-family: Roboto,sans-serif;
-    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+    background:
+    url("https://images.unsplash.com/photo-1653419831613-56ed2a1c8ea8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80")
+    center / cover no-repeat fixed;
 }
   
 .Content {
@@ -39,12 +43,12 @@ body {
 header {
     text-align: center;
     background: transparent;
-    color:rgb(0, 0, 0);
+    color:#fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1em;
-    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 4px solid rgba( 255, 255, 255, 0.25 );
     .heading {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -64,7 +68,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding: 1em;
-    border-top: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid rgba( 255, 255, 255, 0.25 );
     a {
         color:rgb(255, 255, 255);
         text-decoration: none;
@@ -73,119 +77,119 @@ footer {
 
 /* Magnavox Systems */
 
-$mo-primary: rgba(255, 255, 255, 0.2);
+$mo-primary: rgba( 255, 255, 255, 0.25 );
 $mo-secondary: #000;
-$mo-tag-bg: rgba(255, 255, 255, 0.2);
+$mo-tag-bg: rgba( 255, 255, 255, 0.25 );
 $mo-tag-c: #000;
 
-$mi-primary: rgba(255, 255, 255, 0.2);
+$mi-primary: rgba( 255, 255, 255, 0.25 );
 $mi-secondary: #000;
-$mi-tag-bg: rgba(255, 255, 255, 0.2);
+$mi-tag-bg: rgba( 255, 255, 255, 0.25 );
 $mi-tag-c: #000;
 
 /* Sega Systems */
 
-$sg-primary: rgba(128, 128, 128, 0.2);
+$sg-primary: rgba(128, 128, 128, 0.25);
 $sg-secondary: #000;
-$sg-tag-bg: rgba(128, 128, 128, 0.2);
+$sg-tag-bg: rgba(128, 128, 128, 0.25);
 $sg-tag-c: #000;
 
-$ss-primary: rgba(206, 206, 206, 0.2);
+$ss-primary: rgba(206, 206, 206, 0.25);
 $ss-secondary: #000;
-$ss-tag-bg: rgba(206, 206, 206, 0.2);
+$ss-tag-bg: rgba(206, 206, 206, 0.25);
 $ss-tag-c: #000;
 
-$sd-primary: rgba(236, 132, 50, 0.2);
+$sd-primary: rgba(236, 132, 50, 0.25);
 $sd-secondary: #fff;
-$sd-tag-bg: rgba(236, 132, 50, 0.2);
+$sd-tag-bg: rgba(236, 132, 50, 0.25);
 $sd-tag-c: #fff;
 
 /* Atari Systems */
 
-$ahp-primary: rgba(255, 255, 255, 0.2);
+$ahp-primary: rgba( 255, 255, 255, 0.25 );
 $ahp-secondary: #000;
-$ahp-tag-bg: rgba(255, 255, 255, 0.2);
+$ahp-tag-bg: rgba( 255, 255, 255, 0.25 );
 $ahp-tag-c: #000;
 
-$a26-primary: rgba(255, 255, 255, 0.2);
+$a26-primary: rgba( 255, 255, 255, 0.25 );
 $a26-secondary: #000;
-$a26-tag-bg: rgba(255, 255, 255, 0.2);
+$a26-tag-bg: rgba( 255, 255, 255, 0.25 );
 $a26-tag-c: #000;
 
-$a52-primary: rgba(255, 255, 255, 0.2);
+$a52-primary: rgba( 255, 255, 255, 0.25 );
 $a52-secondary: #000;
-$a52-tag-bg: rgba(255, 255, 255, 0.2);
+$a52-tag-bg: rgba( 255, 255, 255, 0.25 );
 $a52-tag-c: #000;
 
-$aj-primary: rgba(130, 21, 16, 0.2);
+$aj-primary: rgba(130, 21, 16, 0.25);
 $aj-secondary: #000;
-$aj-tag-bg: rgba(130, 21, 16, 0.2);
+$aj-tag-bg: rgba(130, 21, 16, 0.25);
 $aj-tag-c: #000;
 
 /* Apple Systems */
 
-$ap-primary: rgba(255, 255, 255, 0.2);
+$ap-primary: rgba( 255, 255, 255, 0.25 );
 $ap-secondary: #000;
-$ap-tag-bg: rgba(255, 255, 255, 0.2);
+$ap-tag-bg: rgba( 255, 255, 255, 0.25 );
 $ap-tag-c: #000;
 
 /* PlayStation Systems */
 
-$ps1-primary: rgba(169, 166, 166, 0.2);
+$ps1-primary: rgba(169, 166, 166, 0.25);
 $ps1-secondary: #1f191d;
-$ps1-tag-bg: rgba(169, 166, 166, 0.2);
+$ps1-tag-bg: rgba(169, 166, 166, 0.25);
 $ps1-tag-c: #000;
 
-$ps2-primary: rgba(38, 38, 38, 0.2);
+$ps2-primary: rgba(38, 38, 38, 0.25);
 $ps2-secondary: rgba(0, 180, 255, 1);
-$ps2-tag-bg: rgba(38, 38, 38, 0.2);
+$ps2-tag-bg: rgba(38, 38, 38, 0.25);
 $ps2-tag-c: #fff;
 
-$ps3-primary: rgba(32, 32, 32, 0.2);
+$ps3-primary: rgba(32, 32, 32, 0.25);
 $ps3-secondary: #fff;
-$ps3-tag-bg: rgba(32, 32, 32, 0.2);
+$ps3-tag-bg: rgba(32, 32, 32, 0.25);
 $ps3-tag-c: #fff;
 
-$ps4-primary: rgba(0, 55, 145, 0.2);
+$ps4-primary: rgba(0, 55, 145, 0.25);
 $ps4-secondary: #fff;
-$ps4-tag-bg: rgba(0, 55, 145, 0.2);
+$ps4-tag-bg: rgba(0, 55, 145, 0.25);
 $ps4-tag-c: #fff;
 
-$ps5-primary: rgba(0, 67, 156, 0.2);
+$ps5-primary: rgba(0, 67, 156, 0.25);
 $ps5-secondary: #fff;
-$ps5-tag-bg: rgba(0, 67, 156, 0.2);
+$ps5-tag-bg: rgba(0, 67, 156, 0.25);
 $ps5-tag-c: #fff;
 
 /* Nintendo Systems */
 
-$nes-primary: rgba(205, 0, 0, 0.2);
+$nes-primary: rgba(205, 0, 0, 0.25);
 $nes-secondary: #fff;
-$nes-tag-bg: rgba(205, 0, 0, 0.2);
+$nes-tag-bg: rgba(205, 0, 0, 0.25);
 $nes-tag-c: #fff;
 
-$snes-primary: rgba(79, 67, 174, 0.2);
+$snes-primary: rgba(79, 67, 174, 0.25);
 $snes-secondary: #fff;
-$snes-tag-bg: rgba(79, 67, 174, 0.2);
+$snes-tag-bg: rgba(79, 67, 174, 0.25);
 $snes-tag-c: #fff;
 
-$n64-primary: rgba(50, 153, 0, 0.2);
+$n64-primary: rgba(50, 153, 0, 0.25);
 $n64-secondary: #fff;
-$n64-tag-bg: rgba(50, 153, 0, 0.2);
+$n64-tag-bg: rgba(50, 153, 0, 0.25);
 $n64-tag-c: #000;
 
-$ngc-primary: rgba(109, 93, 180, 0.2);
+$ngc-primary: rgba(109, 93, 180, 0.25);
 $ngc-secondary: #fff;
-$ngc-tag-bg: rgba(109, 93, 180, 0.2);
+$ngc-tag-bg: rgba(109, 93, 180, 0.25);
 $ngc-tag-c: #fff;
 
-$wii-primary: rgba(128, 128, 128, 0.2);
+$wii-primary: rgba(128, 128, 128, 0.25);
 $wii-secondary: #fff;
-$wii-tag-bg: rgba(128, 128, 128, 0.2);
+$wii-tag-bg: rgba(128, 128, 128, 0.25);
 $wii-tag-c: #fff;
 
-$wiiu-primary: rgba(0, 154, 199, 0.2);
+$wiiu-primary: rgba(0, 154, 199, 0.25);
 $wiiu-secondary: #fff;
-$wiiu-tag-bg: rgba(0, 154, 199, 0.2);
+$wiiu-tag-bg: rgba(0, 154, 199, 0.25);
 $wiiu-tag-c: #fff;
 
 $ns-primary: rgba(230, 0, 19, 1);
@@ -195,19 +199,19 @@ $ns-tag-c: #fff;
 
 /* Xbox Systems */
 
-$xb-primary: rgba(38, 38, 38, 0.2);
+$xb-primary: rgba(38, 38, 38, 0.25);
 $xb-secondary: rgba(90, 171, 67, 1);
-$xb-tag-bg: rgba(38, 38, 38, 0.2);
+$xb-tag-bg: rgba(38, 38, 38, 0.25);
 $xb-tag-c: rgba(90, 171, 67, 1);
 
-$xb360-primary: rgba(126, 185, 0, 0.2);
+$xb360-primary: rgba(126, 185, 0, 0.25);
 $xb360-secondary: #fff;
-$xb360-tag-bg: rgba(126, 185, 0, 0.2);
+$xb360-tag-bg: rgba(126, 185, 0, 0.25);
 $xb360-tag-c: #fff;
 
-$xb1-primary: rgba(58, 58, 58, 0.2);
+$xb1-primary: rgba(58, 58, 58, 0.25);
 $xb1-secondary: #fff;
-$xb1-tag-bg: rgba(58, 58, 58, 0.2);
+$xb1-tag-bg: rgba(58, 58, 58, 0.25);
 $xb1-tag-c: #fff;
 
 $xbsx-primary: rgba(230, 230, 230, 1);
@@ -217,7 +221,7 @@ $xbsx-tag-c: #fff;
 
 .vertical-timeline {
     &::before {
-        background: rgba(255, 255, 255, 0.2) !important;
+        background: rgba( 255, 255, 255, 0.25 ) !important;
     }
 }
   
@@ -236,14 +240,8 @@ $xbsx-tag-c: #fff;
         -webkit-box-shadow: none;
     }
     .vertical-timeline-element-content {
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
-        backdrop-filter: saturate(180%) blur(10px);
-        border: 1px solid transparent;
+        border-radius: 10px;
         color: #000;
-        box-shadow: none;
-        -webkit-box-shadow: none;
         p {
             text-align: left;
             font-size: 1rem;
@@ -329,6 +327,24 @@ $xbsx-tag-c: #fff;
         }
     }
   }
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) { 
+    .vertical-timeline--animate {
+        .vertical-timeline-element-content {
+            /* From https://css.glass */
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: none;
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            transition: 0.3s;
+            &:hover,:focus {
+                transform: translateY(-10px);
+                border-color: transparent;
+                border-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}
 
   .vertical-timeline--animate {
     .vertical-timeline-element-content:nth-child(even) {
@@ -995,21 +1011,3 @@ $xbsx-tag-c: #fff;
       }
 
     /* End */
-
-    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) { 
-        .vertical-timeline--animate {
-            .vertical-timeline-element-content {
-                /* From https://css.glass */
-                background: rgba(255, 255, 255, 0.2);
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(5px);
-                -webkit-backdrop-filter: blur(5px);
-                transition: 0.3s;
-                &:hover,:focus {
-                    transform: translateY(-10px);
-                    border-color: transparent;
-                    border-color: rgba(255, 255, 255, 0.3);
-                }
-            }
-        }
-    }
