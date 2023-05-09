@@ -536,7 +536,8 @@ const Data = [
     discontinued: "Present",
     price: "£249-£449",
     icon: <VideogameAssetRoundedIcon />,
-    image: "/src/images/xbsxs.png",
+    image:
+      "https://github.com/Swinny96/vgh-timeline-latest/blob/main/src/images/xbsxs.png?raw=true",
     game1: "Assassin's Creed Valhalla",
     game2: "Call of Duty: Black Ops Cold War",
     game3: "Madden NFL 21",
