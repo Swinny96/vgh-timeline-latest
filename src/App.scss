@@ -10,6 +10,85 @@
       url("./fonts/MataBold.otf") format("oft");
 }
 
+@font-face {
+    font-family: "Sony Bold";   /*Can be any text*/
+    src: local("SSTBold"),
+      url("./fonts/sony/SSTBold.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Bold Condensed";   /*Can be any text*/
+    src: local("SSTBoldCn"),
+      url("./fonts/sony/SSTBoldCn.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Bold Italic";   /*Can be any text*/
+    src: local("SSTBoldIt"),
+      url("./fonts/sony/SSTBoldIt.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Heavy";   /*Can be any text*/
+    src: local("SSTHeavy"),
+      url("./fonts/sony/SSTHeavy.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Heavy Italic";   /*Can be any text*/
+    src: local("SSTHeavyIt"),
+      url("./fonts/sony/SSTHeavyIt.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Light";   /*Can be any text*/
+    src: local("SSTLight"),
+      url("./fonts/sony/SSTLight.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Light Italic";   /*Can be any text*/
+    src: local("SSTLightIt"),
+      url("./fonts/sony/SSTLightIt.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Medium";   /*Can be any text*/
+    src: local("SSTMedium"),
+      url("./fonts/sony/SSTMedium.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Medium Condensed";   /*Can be any text*/
+    src: local("SSMediumCn"),
+      url("./fonts/sony/SSTMediumCn.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Medium Italic";   /*Can be any text*/
+    src: local("SSTMediumIt"),
+      url("./fonts/sony/SSTMediumIt.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Regular";   /*Can be any text*/
+    src: local("SSTRg"),
+      url("./fonts/sony/SSTRg.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Regular Condensed";   /*Can be any text*/
+    src: local("SSRgCn"),
+      url("./fonts/sony/SSTRgCn.TTF") format("tff");
+}
+
+@font-face {
+    font-family: "Sony Regular Italic";   /*Can be any text*/
+    src: local("SSTRgIt"),
+      url("./fonts/sony/SSTRgIt.TTF") format("tff");
+}
+
+
 #root {
     position: relative;
     min-height: 100vh;
